@@ -33,11 +33,11 @@ class Cle {
 			uECC_compute_public_key(private_key, public_key, curve);
 		}
 
-		char* get_private_key() {
+		char* getPrivateKey() {
 			return binToHexString(new char[private_key_size](), private_key, private_key_size);
 		}
 		
-		char* get_public_key() {
+		char* getPublicKey() {
 			return binToHexString(new char[public_key_size](), public_key, public_key_size);
 		}
 
@@ -45,10 +45,10 @@ class Cle {
 
 namespace py = pybind11;
 
-PYBIND11_MODULE(composant_cle, cle) {
-	py::class_<Cle>(cle, "Cle")
+PYBIND11_MODULE(cle_component, cle) {
+	py::class_<Cle>(cle, "cle")
 		.def(py::init<>())
 		.def("initialize", &Cle::initialize)
-		.def("get_private_key", &Cle::get_private_key)
-		.def("get_public_key", &Cle::get_public_key)
+		.def("getPrivateKey", &Cle::getPrivateKey)
+		.def("getPublicKey", &Cle::getPublicKey);
 }
