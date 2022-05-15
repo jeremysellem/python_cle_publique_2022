@@ -1,4 +1,8 @@
 # python_cpp
+
+Résultat :
+![Image text](Résultat_OK.png)
+
 Exemple d'utilisation d'un composant en python
 Utilise pybind11
 apres git clone, faire:
