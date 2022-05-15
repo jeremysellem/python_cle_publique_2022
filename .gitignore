@@ -2,3 +2,4 @@
 *.so
 *.i
 *.swp
+.DS_Store
