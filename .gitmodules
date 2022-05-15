@@ -8,5 +8,5 @@
 	branch = master
 [submodule "composant_cle/conv-string-bin"]
 	path = composant_cle/conv-string-bin
-	url = https://github.com/jeremysellem/Conversion_String_binaire.git
+	url = https://github.com/jluuM2/Conversion_String_binaire.git
 	branch = main
